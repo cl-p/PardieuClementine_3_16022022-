@@ -1,0 +1,176 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+
+@font-face 
+{
+    font-family: "Shrikhand";
+    src: url("font/Shrikhand-Regular.ttf");
+}
+@font-face
+{
+    font-family: "Roboto";
+    src: url("font/Roboto-regular.ttf");
+}
+
+body
+{
+    width: auto;
+    font-family: Roboto;
+}
+header
+{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    .titre
+    {
+        font-family: Shrikhand;
+        font-size: larger;
+        border-bottom: 2px solid grey;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    .localisation
+    {
+        background-color: $localisation-color;
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        ::placeholder
+        {
+            background-color: $localisation-color;
+            color: black;
+        }
+        input 
+        {
+            background-color: (lighten($color: rgba(168, 167, 167, 0.664), $amount: 60%));
+            padding: 0px;
+            border: 0px;
+        }
+    }
+    .explorer
+    {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        background-color: (lighten($color: rgba(168, 167, 167, 0.664), $amount: 20%));
+        padding-bottom: 40px;
+        font-family: Roboto;
+        h2 
+        {
+            margin-top: 25px;
+            margin-bottom: 0px;
+        }
+        p 
+        {
+            margin-top: 12px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: lighter;
+        }
+        .explorer-btn
+        {
+            width: 220px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 45px;
+            color: white;
+            background: linear-gradient(to left top, $primary-color, $secondary-color);
+            border-style: none;
+
+        }
+    }
+}
+main 
+{
+    .fonctionnement
+    {
+        padding: 15px;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        .tuile
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 20px;
+            background-color: (lighten($color: rgba(168, 167, 167, 0.664), $amount: 20%));
+            border-radius: 20px;
+            height: 70px;
+            box-shadow: 3px 3px 6px rgba(168, 167, 167, 0.664);
+            font-weight: bolder;
+
+            &:hover
+            {
+                background-color: lighten($color: $primary-color , $amount: 35%);
+                .fas
+                {
+                    color: $primary-color;
+                }
+            }
+        }
+        
+        .fas
+        {
+            color: darken($color: $localisation-color, $amount: 40%) ;
+        }
+        .tuile-nb
+        {
+            background-color: $primary-color;
+            border-radius: 50%;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 5px;
+            padding-top: 5px;
+            color: white;
+        }
+    }
+}
+.restaurant
+{
+    background-color: (lighten($color: rgba(168, 167, 167, 0.664), $amount: 20%));
+    padding-top: 30px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 40px;
+    padding-left: 40px;
+    a 
+    {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+    .img-restaurant
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: white;
+        border-radius: 20px;
+        overflow: hidden;
+        img 
+        {
+            max-width: 100%;
+            height: auto;
+            
+        }
+        figcaption 
+        {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 15px;
+            font-size: 150%;
+        }
+    }
+}
+footer
+{
+   @include footer;
+}
