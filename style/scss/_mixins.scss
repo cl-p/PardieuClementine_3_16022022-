@@ -7,9 +7,10 @@
     font-family: Shrikhand;
     font-weight: bolder;
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    align-items: center;
     height: 320px;
-    justify-content: center;
+    justify-content: flex-end;
     background-size: cover;
  }
  @mixin header-h1-menu {

@@ -18,10 +18,15 @@ body
 header
 {
     @include header-menu;
-    background-image: url("../../Maquettes Ohmyfood/Maquettes Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+    background-image: url("../images/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
     h1 
     {
         @include header-h1-menu;
+    }
+    .retour-accueil
+    {
+        background-color: white;
+        font-size: 300%;
     }
 }
 .entree
