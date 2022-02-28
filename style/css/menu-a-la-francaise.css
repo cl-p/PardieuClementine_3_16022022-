@@ -1,10 +1,10 @@
 @font-face {
   font-family: "Roboto";
-  src: url("font/Roboto-regular.ttf");
+  src: url("/style/font/Roboto-Regular.ttf");
 }
 @font-face {
   font-family: "Shrikhand";
-  src: url("font/Shrikhand-Regular.ttf");
+  src: url("/style/font/Shrikhand-Regular.ttf");
 }
 body {
   margin: 0px;
@@ -19,33 +19,78 @@ header {
   flex-direction: column;
   align-items: center;
   height: 320px;
-  justify-content: flex-end;
+  justify-content: space-between;
   background-size: cover;
   background-image: url("../images/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
 }
-header h1 {
+header .retour-accueil {
+  background-color: white;
+  font-size: 150%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+header .retour-accueil a {
+  color: black;
+  text-decoration: none;
+}
+header .retour-accueil a .fas {
+  font-size: 80%;
+}
+header .retour-accueil span {
+  margin-left: 160px;
+}
+header .entete-page {
   border-radius: 30px 30px 0px 0px;
   margin: 0px;
   width: 100%;
-  padding-top: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 10px;
   background-color: #dbdada;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
-header .retour-accueil {
-  background-color: white;
-  font-size: 300%;
+header .far {
+  padding-right: 30px;
+  font-size: 160%;
+}
+header h1 {
+  padding-left: 25px;
 }
 
-.entree {
+.far {
+  transition: all 3000ms;
+}
+.far:hover {
+  transform: scale(1.1);
+  background: #9356DC;
+}
+
+.section-menu {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   gap: 15px;
+  margin-bottom: 20px;
 }
-.entree .titre-entree {
+.section-menu .titre {
   margin-left: 20px;
+  position: relative;
 }
-.entree .intitule-repas {
+.section-menu .titre::after {
+  position: absolute;
+  content: "";
+  height: 3px;
+  bottom: -4px;
+  margin: 0 auto;
+  left: 0;
+  width: 40px;
+  background: #07f1ca;
+}
+.section-menu .intitule-repas {
   background-color: white;
   border-radius: 15px;
   padding-top: 10px;
@@ -53,92 +98,20 @@ header .retour-accueil {
   margin-left: 20px;
   margin-right: 20px;
 }
-.entree .intitule-repas span {
+.section-menu .intitule-repas span {
   margin-left: 10px;
 }
-.entree .intitule-repas .titre-repas {
+.section-menu .intitule-repas .titre-repas {
   font-weight: bolder;
 }
-.entree .intitule-repas .accompagnement {
+.section-menu .intitule-repas .accompagnement {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   font-size: 90%;
   padding-top: 5px;
 }
-.entree .intitule-repas .accompagnement .prix {
-  padding-right: 20px;
-  font-weight: bolder;
-}
-
-.plat {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: 15px;
-}
-.plat .titre-plat {
-  margin-left: 20px;
-  margin-top: 20px;
-}
-.plat .intitule-repas {
-  background-color: white;
-  border-radius: 15px;
-  padding-top: 10px;
-  padding-bottom: 15px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-.plat .intitule-repas span {
-  margin-left: 10px;
-}
-.plat .intitule-repas .titre-repas {
-  font-weight: bolder;
-}
-.plat .intitule-repas .accompagnement {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  font-size: 90%;
-  padding-top: 5px;
-}
-.plat .intitule-repas .accompagnement .prix {
-  padding-right: 20px;
-  font-weight: bolder;
-}
-
-.dessert {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: 15px;
-}
-.dessert .titre-dessert {
-  margin-left: 20px;
-  margin-top: 20px;
-}
-.dessert .intitule-repas {
-  background-color: white;
-  border-radius: 15px;
-  padding-top: 10px;
-  padding-bottom: 15px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-.dessert .intitule-repas span {
-  margin-left: 10px;
-}
-.dessert .intitule-repas .titre-repas {
-  font-weight: bolder;
-}
-.dessert .intitule-repas .accompagnement {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  font-size: 90%;
-  padding-top: 5px;
-}
-.dessert .intitule-repas .accompagnement .prix {
+.section-menu .intitule-repas .accompagnement .prix {
   padding-right: 20px;
   font-weight: bolder;
 }

@@ -4,18 +4,19 @@
 @font-face 
 {
     font-family: "Shrikhand";
-    src: url("font/Shrikhand-Regular.ttf");
+    src: url("/style/font/Shrikhand-Regular.ttf");
 }
 @font-face
 {
     font-family: "Roboto";
-    src: url("font/Roboto-regular.ttf");
+    src: url("/style/font/Roboto-Regular.ttf");
 }
 
 body
 {
     width: auto;
     font-family: Roboto;
+    margin: 0px;
 }
 header
 {
@@ -25,11 +26,13 @@ header
     .titre
     {
         font-family: Shrikhand;
-        font-size: larger;
+        font-size: 160%;
         border-bottom: 2px solid grey;
         width: 100%;
         text-align: center;
-        margin-bottom: 0px;
+        margin: 0px;
+        padding-bottom: 10px;
+        padding-top: 10px;
     }
     .localisation
     {
@@ -42,6 +45,8 @@ header
         {
             background-color: $localisation-color;
             color: black;
+            font-family: Roboto;
+            text-align: center;
         }
         input 
         {
@@ -64,19 +69,25 @@ header
         {
             margin-top: 25px;
             margin-bottom: 0px;
+            padding-left: 65px;
+            padding-right: 65px;
+            text-align: center;
+            font-size: 180%;
         }
         p 
         {
             margin-top: 12px;
             margin-bottom: 20px;
+            padding-left: 40px;
+            padding-right: 40px;
             text-align: center;
             font-weight: lighter;
         }
         .explorer-btn
         {
-            width: 220px;
-            padding-top: 10px;
-            padding-bottom: 10px;
+            width: 240px;
+            padding-top: 20px;
+            padding-bottom: 20px;
             border-radius: 45px;
             color: white;
             background: linear-gradient(to left top, $primary-color, $secondary-color);
@@ -87,12 +98,17 @@ header
 }
 main 
 {
+    h1 
+    {
+        padding-left: 30px;
+    }
     .fonctionnement
     {
-        padding: 15px;
+        padding: 20px;
         gap: 20px;
         display: flex;
         flex-direction: column;
+        margin-bottom: 40px;
         .tuile
         {
             display: flex;
@@ -129,44 +145,46 @@ main
             padding-bottom: 5px;
             padding-top: 5px;
             color: white;
+            margin-left: -10px;
         }
     }
 }
 .restaurant
 {
+    h1 
+    {
+        padding-left: 0px;
+    }
     background-color: (lighten($color: rgba(168, 167, 167, 0.664), $amount: 20%));
     padding-top: 30px;
     padding-bottom: 50px;
     display: flex;
     flex-direction: column;
-    padding-right: 40px;
-    padding-left: 40px;
-    a 
+    padding-right: 30px;
+    padding-left: 30px;
+    gap: 30px;
+    .card-restaurant
     {
-        text-decoration: none;
-        color: black;
-        font-weight: bold;
-    }
-    .img-restaurant
-    {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        background-color: white;
-        border-radius: 20px;
-        overflow: hidden;
-        img 
+        @include card-restaurant;
+        .card-restaurant-img
         {
-            max-width: 100%;
-            height: auto;
-            
+            position: relative;
         }
-        figcaption 
+        .badge 
         {
-            padding-top: 20px;
-            padding-bottom: 20px;
-            padding-left: 15px;
-            font-size: 150%;
+        color: rgb(23, 144, 23);
+        background-color: rgb(122, 240, 200);
+        z-index: 1;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        padding: 10px;
+        padding-left: 18px;
+        padding-right: 21px;
+        &:active
+        {
+            background-color: $primary-color;
+        }
         }
     }
 }

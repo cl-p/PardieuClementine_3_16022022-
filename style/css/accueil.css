@@ -1,14 +1,15 @@
 @font-face {
   font-family: "Shrikhand";
-  src: url("font/Shrikhand-Regular.ttf");
+  src: url("/style/font/Shrikhand-Regular.ttf");
 }
 @font-face {
   font-family: "Roboto";
-  src: url("font/Roboto-regular.ttf");
+  src: url("/style/font/Roboto-Regular.ttf");
 }
 body {
   width: auto;
   font-family: Roboto;
+  margin: 0px;
 }
 
 header {
@@ -18,11 +19,13 @@ header {
 }
 header .titre {
   font-family: Shrikhand;
-  font-size: larger;
+  font-size: 160%;
   border-bottom: 2px solid grey;
   width: 100%;
   text-align: center;
-  margin-bottom: 0px;
+  margin: 0px;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 header .localisation {
   background-color: rgba(168, 167, 167, 0.664);
@@ -34,6 +37,8 @@ header .localisation {
 header .localisation ::placeholder {
   background-color: rgba(168, 167, 167, 0.664);
   color: black;
+  font-family: Roboto;
+  text-align: center;
 }
 header .localisation input {
   background-color: rgba(255, 255, 255, 0.664);
@@ -53,28 +58,38 @@ header .explorer {
 header .explorer h2 {
   margin-top: 25px;
   margin-bottom: 0px;
+  padding-left: 65px;
+  padding-right: 65px;
+  text-align: center;
+  font-size: 180%;
 }
 header .explorer p {
   margin-top: 12px;
   margin-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
   text-align: center;
   font-weight: lighter;
 }
 header .explorer .explorer-btn {
-  width: 220px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  width: 240px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   border-radius: 45px;
   color: white;
   background: linear-gradient(to left top, #9356DC, #FF79DA);
   border-style: none;
 }
 
+main h1 {
+  padding-left: 30px;
+}
 main .fonctionnement {
-  padding: 15px;
+  padding: 20px;
   gap: 20px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 40px;
 }
 main .fonctionnement .tuile {
   display: flex;
@@ -105,6 +120,7 @@ main .fonctionnement .tuile-nb {
   padding-bottom: 5px;
   padding-top: 5px;
   color: white;
+  margin-left: -10px;
 }
 
 .restaurant {
@@ -113,31 +129,70 @@ main .fonctionnement .tuile-nb {
   padding-bottom: 50px;
   display: flex;
   flex-direction: column;
-  padding-right: 40px;
-  padding-left: 40px;
+  padding-right: 30px;
+  padding-left: 30px;
+  gap: 30px;
 }
-.restaurant a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
+.restaurant h1 {
+  padding-left: 0px;
 }
-.restaurant .img-restaurant {
+.restaurant .card-restaurant {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   background-color: white;
   border-radius: 20px;
-  overflow: hidden;
+  height: 300px;
 }
-.restaurant .img-restaurant img {
+.restaurant .card-restaurant a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  height: 100%;
+}
+.restaurant .card-restaurant .card-restaurant-img {
+  overflow: hidden;
+  height: 70%;
+}
+.restaurant .card-restaurant .card-restaurant-img img {
   max-width: 100%;
   height: auto;
+  border-radius: 20px 20px 0px 0px;
 }
-.restaurant .img-restaurant figcaption {
-  padding-top: 20px;
-  padding-bottom: 20px;
+.restaurant .card-restaurant .card-restaurant-body {
   padding-left: 15px;
   font-size: 150%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.restaurant .card-restaurant .card-restaurant-body p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.restaurant .card-restaurant .card-restaurant-body span {
+  font-weight: lighter;
+}
+.restaurant .card-restaurant .card-restaurant-body .far {
+  padding-right: 30px;
+}
+.restaurant .card-restaurant .card-restaurant-img {
+  position: relative;
+}
+.restaurant .card-restaurant .badge {
+  color: #179017;
+  background-color: #7af0c8;
+  z-index: 1;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  padding: 10px;
+  padding-left: 18px;
+  padding-right: 21px;
+}
+.restaurant .card-restaurant .badge:active {
+  background-color: #9356DC;
 }
 
 footer {

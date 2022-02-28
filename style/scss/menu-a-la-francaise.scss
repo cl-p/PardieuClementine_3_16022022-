@@ -4,12 +4,12 @@
 @font-face
 {
     font-family: "Roboto";
-    src: url("font/Roboto-regular.ttf");
+    src: url("/style/font/Roboto-Regular.ttf");
 }
 @font-face 
 {
     font-family: "Shrikhand";
-    src: url("font/Shrikhand-Regular.ttf");
+    src: url("/style/font/Shrikhand-Regular.ttf");
 }
 body
 {
@@ -19,45 +19,30 @@ header
 {
     @include header-menu;
     background-image: url("../images/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
-    h1 
+    @include header-entete;
+    
+}
+.far
+{
+    transition: all 3000ms;
+    &:hover
     {
-        @include header-h1-menu;
-    }
-    .retour-accueil
-    {
-        background-color: white;
-        font-size: 300%;
+        transform: scale(1.1);
+        background: $primary-color;
     }
 }
-.entree
+.section-menu
 {
     @include organisation-tuile;
-    .titre-entree
+    .titre
     {
-        margin-left: 20px;
+        @include titre-menu;
     }
     @include tuile-menu;
+    margin-bottom: 20px;
+
 }
-.plat
-{
-    @include organisation-tuile;
-    .titre-plat
-    {
-        margin-left: 20px;
-        margin-top: 20px;
-    }
-    @include tuile-menu;
-}
-.dessert
-{
-    @include organisation-tuile;
-    .titre-dessert
-    {
-        margin-left: 20px;
-        margin-top: 20px;
-    }
-    @include tuile-menu;
-}
+
 .btn
 {
     @include commander-btn;
