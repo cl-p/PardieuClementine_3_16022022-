@@ -75,6 +75,14 @@
         padding-bottom: 15px;
         margin-left: 20px;
         margin-right: 20px;
+        transition: transform 500ms;
+        transform: scale(1);
+        &:hover
+        {
+            transform: scale(1.1);
+            box-shadow: 5px 4px 4px rgb(185, 184, 184);
+            background-color: lighten($secondary-color, $amount: 25%);
+        }
         span 
         {
             margin-left: 10px;
@@ -124,7 +132,8 @@
     .logo
     {
         font-family: "shrikhand";
-        padding: 20px;
+        padding: 15px;
+        font-size: 140%;
     }
     a 
     {
@@ -157,6 +166,14 @@
         color: white;
         background: linear-gradient(to left top, $primary-color, $secondary-color);
         border-style: none; 
+        font-size: 100%;
+        transition: transform 500ms;
+        transform: scale(1);
+        &:hover
+        {
+            transform: scale(1.1);
+            box-shadow: 5px 4px 4px rgb(185, 184, 184);
+        }
     }
  }
  @mixin card-restaurant {
@@ -166,12 +183,21 @@
      background-color: white;
      border-radius: 20px;
      height: 300px;
+     transition: transform 500ms;
+     transform: scale(1);
+        &:hover
+        {
+            transform: scale(1.1);
+            box-shadow: 5px 4px 4px rgb(185, 184, 184);
+            background-color: lighten($secondary-color, $amount: 25%);
+        }
     a 
     {
         text-decoration: none;
         color: black;
         font-weight: bold;
         height: 100%;
+        
     }
     .card-restaurant-img
     {

@@ -1,5 +1,6 @@
 @import "_variables.scss";
 @import "_mixins.scss";
+@import "_animations.scss";
 
 @font-face 
 {
@@ -26,7 +27,7 @@ header
     .titre
     {
         font-family: Shrikhand;
-        font-size: 160%;
+        font-size: 190%;
         border-bottom: 2px solid grey;
         width: 100%;
         text-align: center;
@@ -92,6 +93,14 @@ header
             color: white;
             background: linear-gradient(to left top, $primary-color, $secondary-color);
             border-style: none;
+            font-size: 100%;
+            transition: transform 500ms;
+            transform: scale(1);
+            &:hover
+            {
+                transform: scale(1.1);
+                box-shadow: 5px 4px 4px rgb(185, 184, 184);
+            }
 
         }
     }
@@ -181,11 +190,8 @@ main
         padding: 10px;
         padding-left: 18px;
         padding-right: 21px;
-        &:active
-        {
-            background-color: $primary-color;
         }
-        }
+       
     }
 }
 footer

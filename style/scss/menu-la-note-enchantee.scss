@@ -1,5 +1,6 @@
 @import "_variables.scss";
 @import "_mixins.scss";
+@import "_animations.scss";
 
 @font-face
 {
@@ -30,6 +31,7 @@ header
     }
     @include tuile-menu;
     margin-bottom: 20px;
+
 }
 
 .btn
