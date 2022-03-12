@@ -27,7 +27,7 @@ header
     .titre
     {
         font-family: Shrikhand;
-        font-size: 190%;
+        font-size: 55px;
         border-bottom: 2px solid grey;
         width: 100%;
         text-align: center;
@@ -54,6 +54,8 @@ header
             background-color: (lighten($color: rgba(168, 167, 167, 0.664), $amount: 60%));
             padding: 0px;
             border: 0px;
+            font-size: 30px;
+            font-weight: bolder;
         }
     }
     .explorer
@@ -73,7 +75,7 @@ header
             padding-left: 65px;
             padding-right: 65px;
             text-align: center;
-            font-size: 180%;
+            font-size: 40px;
         }
         p 
         {
@@ -83,14 +85,18 @@ header
             padding-right: 40px;
             text-align: center;
             font-weight: lighter;
+            font-size: 30px;
         }
         .explorer-btn
         {
-            width: 240px;
-            padding-top: 20px;
-            padding-bottom: 20px;
+            width: 275px;
+            padding-top: 30px;
+            padding-bottom: 30px;
             border-radius: 45px;
             color: white;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 22px;
             background: linear-gradient(to left top, $primary-color, $secondary-color);
             border-style: none;
             font-size: 100%;
@@ -110,6 +116,7 @@ main
     h1 
     {
         padding-left: 30px;
+        font-size: 30px;
     }
     .fonctionnement
     {
@@ -130,7 +137,7 @@ main
             height: 70px;
             box-shadow: 3px 3px 6px rgba(168, 167, 167, 0.664);
             font-weight: bolder;
-
+            font-size: 22px;
             &:hover
             {
                 background-color: lighten($color: $primary-color , $amount: 35%);
@@ -163,6 +170,7 @@ main
     h1 
     {
         padding-left: 0px;
+        font-size: 30px;
     }
     background-color: (lighten($color: rgba(168, 167, 167, 0.664), $amount: 20%));
     padding-top: 30px;

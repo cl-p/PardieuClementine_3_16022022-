@@ -81,7 +81,7 @@ header {
 }
 header .titre {
   font-family: Shrikhand;
-  font-size: 190%;
+  font-size: 55px;
   border-bottom: 2px solid grey;
   width: 100%;
   text-align: center;
@@ -90,14 +90,14 @@ header .titre {
   padding-top: 10px;
 }
 header .localisation {
-  background-color: rgba(168, 167, 167, 0.664);
+  background-color: rgba(199, 196, 196, 0.664);
   width: 100%;
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 header .localisation ::placeholder {
-  background-color: rgba(168, 167, 167, 0.664);
+  background-color: rgba(199, 196, 196, 0.664);
   color: black;
   font-family: Roboto;
   text-align: center;
@@ -106,6 +106,8 @@ header .localisation input {
   background-color: rgba(255, 255, 255, 0.664);
   padding: 0px;
   border: 0px;
+  font-size: 30px;
+  font-weight: bolder;
 }
 header .explorer {
   display: flex;
@@ -123,7 +125,7 @@ header .explorer h2 {
   padding-left: 65px;
   padding-right: 65px;
   text-align: center;
-  font-size: 180%;
+  font-size: 40px;
 }
 header .explorer p {
   margin-top: 12px;
@@ -132,13 +134,17 @@ header .explorer p {
   padding-right: 40px;
   text-align: center;
   font-weight: lighter;
+  font-size: 30px;
 }
 header .explorer .explorer-btn {
-  width: 240px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  width: 275px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   border-radius: 45px;
   color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 22px;
   background: linear-gradient(to left top, #9356DC, #FF79DA);
   border-style: none;
   font-size: 100%;
@@ -152,6 +158,7 @@ header .explorer .explorer-btn:hover {
 
 main h1 {
   padding-left: 30px;
+  font-size: 30px;
 }
 main .fonctionnement {
   padding: 20px;
@@ -171,6 +178,7 @@ main .fonctionnement .tuile {
   height: 70px;
   box-shadow: 3px 3px 6px rgba(168, 167, 167, 0.664);
   font-weight: bolder;
+  font-size: 22px;
 }
 main .fonctionnement .tuile:hover {
   background-color: #f2eafb;
@@ -179,7 +187,7 @@ main .fonctionnement .tuile:hover .fas {
   color: #9356DC;
 }
 main .fonctionnement .fas {
-  color: rgba(66, 65, 65, 0.664);
+  color: rgba(98, 93, 93, 0.664);
 }
 main .fonctionnement .tuile-nb {
   background-color: #9356DC;
@@ -204,6 +212,7 @@ main .fonctionnement .tuile-nb {
 }
 .restaurant h1 {
   padding-left: 0px;
+  font-size: 30px;
 }
 .restaurant .card-restaurant {
   display: flex;
@@ -279,7 +288,7 @@ footer {
 footer .logo {
   font-family: "shrikhand";
   padding: 15px;
-  font-size: 140%;
+  font-size: 30px;
 }
 footer a {
   color: white;
