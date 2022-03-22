@@ -9,7 +9,6 @@
     align-items: center;
     background-color: black;
     z-index: -1;
-    -webkit-animation: fade-out 3s linear;
     animation: fade-out 3s linear;
     @keyframes fade-out {
         0%{
@@ -31,7 +30,6 @@
     border-top-color: $primary-color;
     border-bottom-color: $secondary-color;
     border-radius: 50%;
-    -webkit-animation: loader 3s linear;
     animation: loader 3s linear;
     @keyframes loader {
         0% {
@@ -47,7 +45,6 @@
 }
 .section-menu
 {
-    -webkit-animation: fade-in 700ms ease-in-out;
     animation: fade-in 700ms ease-in-out;
     @keyframes fade-in {
         0%{
@@ -59,5 +56,105 @@
             opacity: 1;
         }
 
+    }
+}
+.card-restaurant-body
+{
+    .fas 
+    {
+        &:hover
+        {
+            animation: heart 900ms ease-in;
+            animation-fill-mode: forwards;
+            @keyframes heart {
+                0%{
+
+                }
+                50%{
+                    color: linear-gradient(white,$primary-color);
+                }
+                100%{
+                    color: $primary-color;
+                    -webkit-text-stroke: $primary-color 3px;
+                }
+            }
+        }
+    }
+}
+.entete-page
+{
+    .fas
+    {
+        &:hover
+        {
+            -webkit-animation: heart 900ms ease-in;
+            animation: heart 900ms ease-in;
+            animation-fill-mode: forwards;
+            @keyframes heart {
+                0%{
+
+                }
+                50%{
+                    color: linear-gradient(white,$primary-color);
+                }
+                100%{
+                    color: $primary-color;
+                    -webkit-text-stroke: $primary-color 3px;
+                }
+            }
+        }
+    }
+}
+.repas
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+
+    &:hover
+    {
+        .prix {
+            margin-right: 70px;
+        }
+        .repas-select
+        {
+            right: 0px;
+            transition-duration: 300ms;
+            .fas
+            {
+                color: white;
+                transition-duration: 500ms;
+                transform: rotate(360deg);
+            }
+        }
+    }
+
+    .intitule-repas
+    {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: flex;
+        flex-direction: column;
+    }
+    .prix
+    {
+        margin-right: 10px;
+        font-weight: bolder;
+        transition-duration: 300ms;
+
+    }
+    .repas-select
+    {
+        background-color: #07f1ca;
+        position: absolute;
+        width: 60px;
+        right: -60px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
