@@ -5,12 +5,12 @@
 @font-face
 {
     font-family: "Roboto";
-    src: url("/style/font/Roboto-Regular.ttf");
+    src: url("../font/Roboto-Regular.ttf");
 }
 @font-face 
 {
     font-family: "Shrikhand";
-    src: url("/style/font/Shrikhand-Regular.ttf");
+    src: url("../font/Shrikhand-Regular.ttf");
 }
 body
 {
@@ -19,9 +19,25 @@ body
 header
 {
     @include header-menu;
-    background-image: url("/style/images/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
     @include header-entete;
-
+    .restaurant-img
+    {
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: -30px;
+        img {
+            width: 150%;
+            height: auto;
+        }
+        @media screen and (min-width: 992px) 
+        {
+            img {
+                width: 100%;
+            }
+        }
+    }
 }
 .section-menu
 {
@@ -34,9 +50,10 @@ header
     margin-bottom: 20px;
     margin-left: 20px;
     margin-right: 20px;
+
 }
 
-.btn 
+.btn
 {
     @include commander-btn;
 }
@@ -46,4 +63,3 @@ footer
     margin-top: 30px;
 }
 @include media-queries;
-

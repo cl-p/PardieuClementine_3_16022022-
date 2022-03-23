@@ -15,22 +15,23 @@
     .retour-accueil
     {
         background-color: white;
-        font-size: 50px;
+        font-size: 45px;
         width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        position: relative;
         a 
         {
             color: black;
             text-decoration: none;
-            .fas 
+            position: absolute;
+            left: 10px;
+            .fa-arrow-left 
             {
-                &::before{
-                    margin-left: -1500%;
-                    font-size: 25px;
-                }
+                font-size: 25px;
+                
             }
         }
     }
@@ -48,7 +49,7 @@
             align-items: center;
             justify-content: space-between;
         }
-        .fas 
+        .fa-heart 
         {
             padding-right: 30px;
             font-size: 40px;
@@ -257,7 +258,7 @@
             display: flex;
             flex-direction: row;
             justify-content: space-around;
-            align-items: center;
+            flex-wrap: wrap;
          }
          .repas
          {
