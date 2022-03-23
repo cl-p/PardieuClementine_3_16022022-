@@ -45,17 +45,32 @@
 }
 .section-menu
 {
-    animation: fade-in 700ms ease-in-out;
+    animation: fade-in 600ms ease-in-out;
+    animation-fill-mode: forwards;
+    visibility: hidden;
     @keyframes fade-in {
         0%{
             transform: translateX(30%);
             opacity: 0;
         }
+        50%{
+            visibility: visible;
+        }
         100%{
             transform: translateX(0%);
             opacity: 1;
+            visibility: visible;
         }
-
+        
+    }
+}
+@for $i from 2 through 3 {
+    .section-menu
+    {
+        &:nth-child(#{$i})
+        {
+            animation-delay: $i * .3s;
+        }
     }
 }
 .card-restaurant-body
@@ -87,7 +102,6 @@
     {
         &:hover
         {
-            -webkit-animation: heart 900ms ease-in;
             animation: heart 900ms ease-in;
             animation-fill-mode: forwards;
             @keyframes heart {

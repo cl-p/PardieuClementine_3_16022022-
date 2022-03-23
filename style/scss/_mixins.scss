@@ -259,6 +259,13 @@
             flex-direction: row;
             justify-content: space-around;
             flex-wrap: wrap;
+            .section-menu
+            {
+                .repas 
+                {
+                    min-width: 700px;
+                }
+            }
          }
          .repas
          {
