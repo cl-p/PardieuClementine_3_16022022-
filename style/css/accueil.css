@@ -162,7 +162,7 @@ header {
 }
 header .titre {
   font-family: Shrikhand;
-  font-size: 55px;
+  font-size: 50px;
   border-bottom: 2px solid grey;
   width: 100%;
   text-align: center;
@@ -187,12 +187,12 @@ header .localisation input {
   background-color: rgba(255, 255, 255, 0.664);
   padding: 0px;
   border: 0px;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bolder;
   width: 70%;
 }
 header .fa-map-marker-alt:before {
-  font-size: 30px;
+  font-size: 20px;
 }
 header .explorer {
   display: flex;
@@ -210,7 +210,7 @@ header .explorer h2 {
   padding-left: 50px;
   padding-right: 50px;
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
 }
 header .explorer p {
   margin-top: 12px;
@@ -219,7 +219,7 @@ header .explorer p {
   padding-right: 30px;
   text-align: center;
   font-weight: lighter;
-  font-size: 25px;
+  font-size: 18px;
 }
 header .explorer .explorer-btn {
   width: 275px;
@@ -230,7 +230,7 @@ header .explorer .explorer-btn {
   color: white;
   padding-left: 10px;
   padding-right: 10px;
-  font-size: 20px;
+  font-size: 18px;
   background: linear-gradient(to left top, #9356DC, #FF79DA);
   border-style: none;
   transition: transform 500ms;
@@ -243,7 +243,7 @@ header .explorer .explorer-btn:hover {
 
 main h1 {
   padding-left: 30px;
-  font-size: 30px;
+  font-size: 20px;
 }
 main .fonctionnement {
   padding: 20px;
@@ -263,7 +263,7 @@ main .fonctionnement .tuile {
   height: 70px;
   box-shadow: 3px 3px 6px rgba(168, 167, 167, 0.664);
   font-weight: bolder;
-  font-size: 22px;
+  font-size: 18px;
 }
 main .fonctionnement .tuile:hover {
   background-color: #f2eafb;
@@ -302,7 +302,7 @@ main .fonctionnement .tuile-nb {
 }
 .restaurant h1 {
   padding-left: 0px;
-  font-size: 30px;
+  font-size: 25px;
 }
 .restaurant .card-restaurant {
   display: flex;
@@ -310,7 +310,7 @@ main .fonctionnement .tuile-nb {
   align-items: flex-start;
   background-color: white;
   border-radius: 20px;
-  height: 270px;
+  height: 235px;
   transition: transform 500ms;
   transform: scale(1);
   box-shadow: 2px 2px 2px #b9b8b8;
@@ -340,7 +340,7 @@ main .fonctionnement .tuile-nb {
 }
 .restaurant .card-restaurant .card-restaurant-body {
   padding-left: 15px;
-  font-size: 150%;
+  font-size: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -384,7 +384,7 @@ footer {
 footer .logo {
   font-family: "shrikhand";
   padding: 15px;
-  font-size: 40px;
+  font-size: 30px;
 }
 footer a {
   color: white;
@@ -398,7 +398,7 @@ footer .liens {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  font-size: 30px;
+  font-size: 18px;
 }
 
 @media screen and (min-width: 992px) {

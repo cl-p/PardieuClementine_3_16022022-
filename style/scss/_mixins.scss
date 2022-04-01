@@ -30,7 +30,7 @@
             left: 10px;
             .fa-arrow-left 
             {
-                font-size: 25px;
+                font-size: 20px;
                 
             }
         }
@@ -42,7 +42,7 @@
             border-radius: 30px 30px 0px 0px;
             margin: 0px;
             width: 100%;
-            padding-bottom: 10px;
+            padding-bottom: 40px;
             background-color: lighten($color: rgb(168, 167, 167,), $amount: 20%);
             display: flex;
             flex-direction: row;
@@ -52,7 +52,7 @@
         .fa-heart 
         {
             padding-right: 30px;
-            font-size: 40px;
+            font-size: 30px;
             padding-left: 20px;
             -webkit-text-stroke: black 3px;
             color: transparent;
@@ -60,7 +60,7 @@
         h1 
         {
             padding-left: 25px;
-            font-size: 45px;
+            font-size: 35px;
         }
  }
  @mixin organisation-tuile {
@@ -76,7 +76,7 @@
         border-radius: 15px;
         margin-top: 10px;
         margin-bottom: 15px;
-        font-size: 35px;
+        font-size: 18px;
         transition: transform 500ms;
         transform: scale(1);
         &:hover
@@ -117,7 +117,7 @@
  @mixin titre-menu {
     margin-left: 20px;
     position: relative;
-    font-size: 35px;
+    font-size: 25px;
     &::after
     {
         position: absolute;
@@ -141,7 +141,7 @@
     {
         font-family: "shrikhand";
         padding: 15px;
-        font-size: 40px;
+        font-size: 30px;
     }
     a 
     {
@@ -158,7 +158,7 @@
         display: flex;
         flex-direction: column;
         gap: 10px;
-        font-size: 30px;
+        font-size: 18px;
 
     }
  }
@@ -175,7 +175,7 @@
         color: white;
         background: linear-gradient(to left top, $primary-color, $secondary-color);
         border-style: none; 
-        font-size: 30px;
+        font-size: 20px;
         font-weight: bolder;
         transition: transform 500ms;
         transform: scale(1);
@@ -192,7 +192,7 @@
      align-items: flex-start;
      background-color: white;
      border-radius: 20px;
-     height: 270px;
+     height: 235px;
      transition: transform 500ms;
      transform: scale(1);
         &:hover
@@ -227,7 +227,7 @@
     .card-restaurant-body 
     {
         padding-left: 15px;
-        font-size: 150%;
+        font-size: 20px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -276,7 +276,7 @@
              .logo
              {
                 text-align: center;
-                font-size: 35px;
+                font-size: 30px;
              }
              .liens 
             {

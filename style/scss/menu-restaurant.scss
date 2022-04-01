@@ -45,9 +45,12 @@ header
     .titre
     {
         @include titre-menu;
+        margin-top: -25px;
+        font-weight: lighter;
+        margin-bottom: 10px;
     }
     @include tuile-menu;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     margin-left: 20px;
     margin-right: 20px;
 

@@ -27,7 +27,7 @@ header
     .titre
     {
         font-family: Shrikhand;
-        font-size: 55px;
+        font-size: 50px;
         border-bottom: 2px solid grey;
         width: 100%;
         text-align: center;
@@ -54,14 +54,14 @@ header
             background-color: (lighten($color: rgba(168, 167, 167, 0.664), $amount: 60%));
             padding: 0px;
             border: 0px;
-            font-size: 30px;
+            font-size: 20px;
             font-weight: bolder;
             width: 70%;
         }
     }
     .fa-map-marker-alt:before 
     {
-        font-size: 30px;
+        font-size: 20px;
     }
     .explorer
     {
@@ -80,7 +80,7 @@ header
             padding-left: 50px;
             padding-right: 50px;
             text-align: center;
-            font-size: 30px;
+            font-size: 20px;
         }
         p 
         {
@@ -90,7 +90,7 @@ header
             padding-right: 30px;
             text-align: center;
             font-weight: lighter;
-            font-size: 25px;
+            font-size: 18px;
         }
         .explorer-btn
         {
@@ -102,7 +102,7 @@ header
             color: white;
             padding-left: 10px;
             padding-right: 10px;
-            font-size: 20px;
+            font-size: 18px;
             background: linear-gradient(to left top, $primary-color, $secondary-color);
             border-style: none;
             transition: transform 500ms;
@@ -121,7 +121,7 @@ main
     h1 
     {
         padding-left: 30px;
-        font-size: 30px;
+        font-size: 20px;
     }
     .fonctionnement
     {
@@ -143,7 +143,7 @@ main
             height: 70px;
             box-shadow: 3px 3px 6px rgba(168, 167, 167, 0.664);
             font-weight: bolder;
-            font-size: 22px;
+            font-size: 18px;
             &:hover
             {
                 background-color: lighten($color: $primary-color , $amount: 35%);
@@ -182,7 +182,7 @@ main
     h1 
     {
         padding-left: 0px;
-        font-size: 30px;
+        font-size: 25px;
     }
     background-color: (lighten($color: rgba(168, 167, 167, 0.664), $amount: 20%));
     padding-top: 30px;
@@ -202,15 +202,15 @@ main
         }
         .badge 
         {
-        color: rgb(23, 144, 23);
-        background-color: rgb(122, 240, 200);
-        z-index: 1;
-        position: absolute;
-        right: 10px;
-        top: 10px;
-        padding: 10px;
-        padding-left: 18px;
-        padding-right: 21px;
+            color: rgb(23, 144, 23);
+            background-color: rgb(122, 240, 200);
+            z-index: 1;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            padding: 10px;
+            padding-left: 18px;
+            padding-right: 21px;
         }
        
     }
@@ -280,7 +280,4 @@ footer
             font-size: 18px;
         }
     }
-}
-@media (min-width: 992px) and (max-width:1280px) {
-    
 }

@@ -182,13 +182,13 @@ header .retour-accueil a {
   left: 10px;
 }
 header .retour-accueil a .fa-arrow-left {
-  font-size: 25px;
+  font-size: 20px;
 }
 header .entete-page {
   border-radius: 30px 30px 0px 0px;
   margin: 0px;
   width: 100%;
-  padding-bottom: 10px;
+  padding-bottom: 40px;
   background-color: #dbdada;
   display: flex;
   flex-direction: row;
@@ -197,14 +197,14 @@ header .entete-page {
 }
 header .fa-heart {
   padding-right: 30px;
-  font-size: 40px;
+  font-size: 30px;
   padding-left: 20px;
   -webkit-text-stroke: black 3px;
   color: transparent;
 }
 header h1 {
   padding-left: 25px;
-  font-size: 45px;
+  font-size: 35px;
 }
 header .restaurant-img {
   overflow: hidden;
@@ -228,14 +228,17 @@ header .restaurant-img img {
   flex-direction: column;
   justify-content: flex-start;
   gap: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   margin-left: 20px;
   margin-right: 20px;
 }
 .section-menu .titre {
   margin-left: 20px;
   position: relative;
-  font-size: 35px;
+  font-size: 25px;
+  margin-top: -25px;
+  font-weight: lighter;
+  margin-bottom: 10px;
 }
 .section-menu .titre::after {
   position: absolute;
@@ -252,7 +255,7 @@ header .restaurant-img img {
   border-radius: 15px;
   margin-top: 10px;
   margin-bottom: 15px;
-  font-size: 35px;
+  font-size: 18px;
   transition: transform 500ms;
   transform: scale(1);
 }
@@ -295,7 +298,7 @@ header .restaurant-img img {
   color: white;
   background: linear-gradient(to left top, #9356DC, #FF79DA);
   border-style: none;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bolder;
   transition: transform 500ms;
   transform: scale(1);
@@ -317,7 +320,7 @@ footer {
 footer .logo {
   font-family: "shrikhand";
   padding: 15px;
-  font-size: 40px;
+  font-size: 30px;
 }
 footer a {
   color: white;
@@ -331,7 +334,7 @@ footer .liens {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  font-size: 30px;
+  font-size: 18px;
 }
 
 @media screen and (min-width: 992px) {
@@ -351,7 +354,7 @@ footer .liens {
 
   footer .logo {
     text-align: center;
-    font-size: 35px;
+    font-size: 30px;
   }
   footer .liens {
     display: flex;

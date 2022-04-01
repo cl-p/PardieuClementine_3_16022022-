@@ -105,9 +105,6 @@
             animation: heart 900ms ease-in;
             animation-fill-mode: forwards;
             @keyframes heart {
-                0%{
-
-                }
                 50%{
                     color: linear-gradient(white,$primary-color);
                 }
